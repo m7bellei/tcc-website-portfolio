@@ -22,7 +22,6 @@ if (navClose) {
 
 
 /*==================== REMOVE MENU MOBILE ====================*/
-
 const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction() {
