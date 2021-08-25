@@ -785,6 +785,7 @@ img {
 .project__bg {
     background-color: var(--first-color-second);
     padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .project__title {
@@ -802,13 +803,14 @@ img {
 }
 
 .project__img {
-    width: 232px;
+    width: 488px;
     justify-self: center;
+    height: 288px;
+    border-radius: 8px;
 }
 
 
 /*==================== TESTIMONIAL ====================*/
-
 
 /*==================== CONTACT ME ====================*/
 
