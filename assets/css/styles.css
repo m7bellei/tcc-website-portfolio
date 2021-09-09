@@ -22,6 +22,9 @@
     --container-color: #FFF;
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+    --header-text-color: #FFF;
+    --header-text-color-alt: rgb(211, 234, 243);
+    --nav-background-color: hsl(var(--hue-color), 100%, 55%);
 
 
     /*========== Font and typography ==========*/
@@ -81,6 +84,7 @@ body.dark-theme {
         --container-color: hsl(var(--hue-color), 29%, 16%);
         --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
         --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+        
 
 }
 
@@ -89,17 +93,18 @@ body.dark-theme {
 .nav__btns {
     display: flex;
     align-items: center;
+    color: var(--header-text-color);
 }
 
 .change-theme {
     font-size: 1.25rem;
-    color: var(--title-color);
+    color: var(--header-text-color);
     margin-right: var(--mb-1);
     cursor: pointer;
 }
 
 .change-theme:hover {
-    color: var(--first-color);
+    color: var(--header-text-color);
 }
 
 
@@ -182,6 +187,11 @@ img {
 }
 
 /*==================== NAV ====================*/
+
+.header {
+    background-color: var(--nav-background-color);
+}
+
 .nav {
     max-width: 968px;
     height: var(--header-height);
@@ -192,12 +202,12 @@ img {
 
 .nav__logo,
 .nav__toogle {
-    color: var(--title-color);
+    color: var(--header-text-color);
     font-weight: var(--font-medium);
 }
 
 .nav__logo:hover {
-    color: var(--first-color)
+    color: var(--header-text-color)
 }
 
 .nav__toggle {
@@ -233,7 +243,7 @@ img {
     flex-direction: column;
     align-items: center;
     font-size: var(--small-font-size);
-    color: var(--title-color);
+    color: var(--header-text-color);
     font-weight: var(--font-medium);
 }
 
@@ -1178,6 +1188,14 @@ body.show {
     .container {
         margin-left: var(--mb-1);
         margin-right: var(--mb-1);
+    }
+
+    .nav__link {
+        color: var(--title-color);
+    }
+
+    .nav__link:hover {
+        color: var(--first-color);
     }
 
     .nav__menu {
