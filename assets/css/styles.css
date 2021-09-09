@@ -1276,11 +1276,13 @@ body.show {
 
 
 /* For medium devices */
-@media screen and (min-width: 568px){
-
+@media screen and (max-width: 568px){
     .nav__link {
-        color: var(--title-color) !important;
+        color: var(--title-color);
     }
+}
+
+@media screen and (min-width: 568px){
     
     .home__content {
         grid-template-columns: max-content 1fr 1fr;
