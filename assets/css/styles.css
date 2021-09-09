@@ -243,7 +243,7 @@ img {
     flex-direction: column;
     align-items: center;
     font-size: var(--small-font-size);
-    color: var(--header-text-color);
+    color: var(--title-color);
     font-weight: var(--font-medium);
 }
 
