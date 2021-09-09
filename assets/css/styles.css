@@ -409,6 +409,10 @@ img {
     color: var(--first-color);
 }
 
+/* BUTTON FORMS */
+
+
+
 
 /*==================== ABOUT ====================*/
 .about__img {
@@ -840,9 +844,9 @@ img {
 }
 
 .project__img {
-    width: 488px;
+    width: 350px;
     justify-self: center;
-    height: 288px;
+    height: 244px;
     border-radius: 8px;
 }
 
@@ -867,7 +871,7 @@ img {
 .testimonial__img {
     width: 100px;
     height: 100px;
-    border-radius: 50%;
+    border-radius: 100%;
 }
 
 .testimonial__name {
@@ -890,6 +894,34 @@ img {
 
 .swiper-container .swiper-pagination-testimonial {
     bottom: 0;
+}
+
+/*==================== OPINION ====================*/
+.opinion {
+    padding-top: 2rem;
+}
+
+.opinion__container {
+    row-gap: 3.5rem;
+}
+
+.opinion__bg {
+    background-color: var(--first-color-second);
+    padding: 2rem 0 3rem;
+}
+
+.opinion__title {
+    font-size: var(--h1-font-size);
+    margin-bottom: var(--mb-0-25);
+}
+
+.opinion__subtitle {
+    font-size: var(--small-font-size);
+}
+
+.opinion__title,
+.opinion__subtitle {
+    color: #FFF;
 }
 
 
@@ -1303,7 +1335,11 @@ img {
     }
 
     .footer__container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .opinion__container {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .footer__bg {

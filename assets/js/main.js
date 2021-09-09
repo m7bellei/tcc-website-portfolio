@@ -131,6 +131,17 @@ let swiperTestimonial = new Swiper('.testimonial__container', {
     }
   });
 
+
+  /*==================== BUTTONS ====================*/
+
+
+  /* === DOWNLOAD BUTTON === */
+  
+
+   /* === GOOGLE FORMS BUTTON === */
+   
+
+
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
 
