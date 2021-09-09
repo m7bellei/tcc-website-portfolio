@@ -411,6 +411,90 @@ img {
 
 /* BUTTON FORMS */
 
+.button-container {
+	align-items: center;
+	display: flex;
+	height: 15vh;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	transition: background-color 2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.button-opinion {
+	background-color: transparent;
+	border: 2px solid #e7e3e3;
+	cursor: pointer;
+	letter-spacing: 0.2125rem;
+	line-height: 1;
+	overflow: hidden;
+	padding: 20px 30px;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 
+		background-color 0.2s cubic-bezier(0.19, 1, 0.22, 1),
+		border 1s cubic-bezier(0.19, 1, 0.22, 1),
+		color 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+	user-select: none;
+}
+
+.button-opinion a {
+	color: #e7e4e4;
+	font-family: "Varela Round";
+	text-decoration: none;
+	white-space: nowrap;
+    width: 200px;
+    height: 100px;
+}
+
+.button-opinion .mask {
+	background-color: #fff;
+	background-color: rgba(255, 255, 255, 0.5);
+	height: 100px;
+	position: absolute;
+	transform: translate3d(-120%, -50px, 0) rotate3d(0, 0, 1, 45deg);
+	transition: all 1.1s cubic-bezier(0.19, 1, 0.22, 1);
+	width: 200px;
+}
+
+.button-opinion .shift {
+	display: inline-block;
+	transition: all 1.1s cubic-bezier(0.19, 1, 0.22, 1);
+	vertical-align: text-top;
+}
+
+.button-opinion:hover {
+	background-color: rgba(255, 255, 255, 0.05);
+	border-color: #fff;
+	box-shadow: 0 0 5px rgba(255, 245, 245, 0.8);
+}
+
+.button-opinion:hover a {
+	color: #fff;
+}
+
+.button-opinion:hover .mask {
+	background-color: #fff;
+	transform: translate3d(120%, -100px, 0) rotate3d(0, 0, 1, 90deg);
+}
+
+.button-opinion:hover .shift {
+	transform: translateX(5px);
+}
+
+.button-opinion:active {
+	background-color: #fff;
+}
+
+.button-opinion:active a {
+	color: #202020;
+}
+
+body.show {
+	background-color: #282828;
+}
+
 
 
 
@@ -896,7 +980,14 @@ img {
     bottom: 0;
 }
 
-/*==================== OPINION ====================*/
+.touch-container-squad {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+/*==================== OPINION SECTION ====================*/
 .opinion {
     padding-top: 2rem;
 }
@@ -1131,7 +1222,7 @@ img {
     }
 
     .project__img {
-        width: 200px;
+        width: 400px;
     }
 
     .testimonial__data,
@@ -1149,6 +1240,7 @@ img {
     .testimonial__description {
         text-align: center;
     }
+
 }
 
 
@@ -1396,10 +1488,6 @@ img {
 
     .swiper-button-next {
         right: -3.5rem;
-    }
-
-    .swiper-container-horizontal > .swiper-pagination-bullets {
-        bottom: -4.5rem;
     }
 
     .contact__form {
