@@ -456,7 +456,7 @@ img {
 	font-family: "Varela Round";
 	text-decoration: none;
 	white-space: nowrap;
-    width: 200px;
+    width: 100px;
     height: 100px;
 }
 
@@ -1011,7 +1011,7 @@ body.show {
 .opinion__bg {
     background-color: var(--first-color-second);
     padding: 2rem 0 3rem;
-    height: 45vh;
+    height: 50vh;
 }
 
 .opinion__title {
@@ -1195,6 +1195,10 @@ body.show {
         margin-right: var(--mb-1);
     }
 
+    .opinion__container {
+        grid-template-columns: repeat(6, 3fr);
+    }
+
     .nav__link {
         color: var(--title-color) !important;
     }
@@ -1264,6 +1268,10 @@ body.show {
         text-align: center;
     }
 
+    .opinion__bg {
+        height: 60vh;
+    }
+
 }
 
 
@@ -1271,6 +1279,10 @@ body.show {
 @media screen and (min-width: 568px){
     .home__content {
         grid-template-columns: max-content 1fr 1fr;
+    }
+
+    .opinion__container {
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .home__data {
@@ -1305,6 +1317,10 @@ body.show {
         display: grid;
         grid-template-columns: .6fr;
         justify-content: center;
+    }
+
+    .teste {
+        max-width: 250px;
     }
 
 }
@@ -1485,6 +1501,10 @@ body.show {
         padding: 0;
     }
 
+    .opinion__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     .home__blob {
         width: 320px;
     }
@@ -1529,11 +1549,19 @@ body.show {
         .about__data {
             padding: 3rem 15rem 3rem 15rem;
         }
+
+        .opinion__container {
+            grid-template-columns: repeat(3, 1fr);
+        }
         
 
     }
 
     @media screen and (min-width: 1800px) {
+
+        .opinion__container {
+            grid-template-columns: repeat(3, 1fr);
+        }
 
         .about__data {
             padding: 3rem 35rem 3rem 35rem;
