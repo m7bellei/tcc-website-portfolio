@@ -766,6 +766,7 @@ body.show {
     transition: .3s;
 }
 
+
 .services__content:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, .20);
 }
@@ -1234,6 +1235,13 @@ body.show {
         padding: 3.5rem;
     }
 
+    
+.services__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
     .services__modal {
         padding: 0 .5rem;
     }
@@ -1274,6 +1282,13 @@ body.show {
     .nav__menu {
         padding: 2rem .25rem 4rem;
     }
+
+    
+.services__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 }
 
 @media screen and (min-width: 568px) and (max-width: 767px) {
