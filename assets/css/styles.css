@@ -1372,6 +1372,10 @@ body.show {
         margin-bottom: 4rem;
     }
 
+    .about__description {
+        padding: 2rem 10rem 2rem 10rem;
+    }
+
     .header {
         top: 0;
         bottom: initial;
@@ -1531,6 +1535,10 @@ body.show {
     .main,
     .footer__container{
         padding: 0;
+    }
+
+    .about__description {
+        padding: 2rem 5rem 2rem 5rem;
     }
 
     .opinion__container {
