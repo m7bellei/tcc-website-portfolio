@@ -104,7 +104,7 @@ body.dark-theme {
 }
 
 .change-theme:hover {
-    color: var(--header-text-color);
+    color: var(--header-text-color-alt);
 }
 
 
@@ -207,7 +207,7 @@ img {
 }
 
 .nav__logo:hover {
-    color: var(--header-text-color)
+    color: var(--header-text-color-alt)
 }
 
 .nav__toggle {
@@ -248,7 +248,7 @@ img {
 }
 
 .nav__link:hover {
-    color: var(--first-color);
+    color: var(--header-text-color-alt);
 }
 
 .nav__icon{
@@ -276,7 +276,7 @@ img {
 
 /* Active link */
 .active-link {
-    color: var(--first-color);
+    color: red;
 }
 
 
